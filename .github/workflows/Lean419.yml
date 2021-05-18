@@ -85,7 +85,7 @@ jobs:
         cp -f package/litte/commit/default-settings package/lean/default-settings/files/zzz-default-settings
         cp -f package/litte/commit/banner package/base-files/files/etc/banner
         cp -f package/litte/commit/4.19Makefile target/linux/x86/Makefile
-        cp -f package/litte/commit/Leandiffconfig .config && make defconfig
+        cp -f package/litte/commit/Tinydiffconfig .config && make defconfig
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         ./scripts/feeds install -a
